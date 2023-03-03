@@ -1348,7 +1348,7 @@ void print_cmd_info(FILE *f)
                             fprintf(f, "%ld", cmd_commands[i].params[j].integer);
                         }
                         else {
-                            fprintf(f, "<int>");
+                            fprintf(f, "[int]");
                         }
                         break;
                     case CMD_TOK_REAL:
@@ -1356,7 +1356,7 @@ void print_cmd_info(FILE *f)
                             fprintf(f, "%.1f", cmd_commands[i].params[j].real);
                         }
                         else {
-                            fprintf(f,"<real>");
+                            fprintf(f,"[real]");
                         }
                         break;
                     case CMD_TOK_ID:
@@ -1369,7 +1369,7 @@ void print_cmd_info(FILE *f)
                             }
                         }
                         else {
-                            fprintf(f, "<id>");
+                            fprintf(f, "[id]");
                         }
                         break;
                     case CMD_TOK_STR:
@@ -1382,7 +1382,7 @@ void print_cmd_info(FILE *f)
                             }
                         }
                         else{
-                            fprintf(f, "<str>");
+                            fprintf(f, "[str]");
                         }
                         break;
                     case CMD_TOK_MEASURE:
@@ -1390,7 +1390,7 @@ void print_cmd_info(FILE *f)
                             fprintf(f, "%g pt", cmd_commands[i].params[j].real);
                         }
                         else {
-                            fprintf(f, "<measure>");
+                            fprintf(f, "[measure]");
                         }
                         break;
                     default:

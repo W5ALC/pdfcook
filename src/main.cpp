@@ -1,6 +1,6 @@
 /*
     pdfcook : A prepress preparation tool for PDF files
-    Copyright (C) 2021  Arindam Chaudhuri <ksharindam@gmail.com>
+    Copyright (C) 2021  Arindam Chaudhuri [ksharindam@gmail.com]
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -13,7 +13,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License along
-    with this program; if not, see <http://www.gnu.org/licenses/>.
+    with this program; if not, see [http://www.gnu.org/licenses/].
 */
 #include "common.h"
 #include "debug.h"
@@ -29,15 +29,15 @@ bool repair_mode = false;
 
 
 char pusage[][LLEN] = {
-    "Usage: pdfcook [<options>] [<commands>] <infile> ... <outfile>",
+    "Usage: pdfcook [options] [commands] [infile] ... [outfile]",
     "  -h   Display this help screen",
     "  -q --quiet   Supress warning and log messages",
     "     --fonts   Show available standard font names",
     "  -p --papers  Show available paper sizes",
-    "commands: '<cmd1> <cmd2> ... <cmd_n>'",
+    "commands: '[cmd1] [cmd2] ... [cmd_n]'",
     "command: name(arg_1, ... arg_name=arg_value){page_range1 page_range2 ...}",
-    "args eg. : <int> 12,  <real> 12.0,  <id> a4,  <str> \"Helvetica\"",
-    "           <measure> 612.0 (without unit pt) or 8.5in (with unit mm,cm,in)",
+    "args eg. : [int] 12,  [real] 12.0,  [id] a4,  [str] \"Helvetica\"",
+    "           [measure] 612.0 (without unit pt) or 8.5in (with unit mm,cm,in)",
     "list of commands :"
 };
 
